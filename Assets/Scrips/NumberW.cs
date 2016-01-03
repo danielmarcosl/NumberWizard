@@ -3,18 +3,18 @@ using System.Collections;
 
 public class NumberW : MonoBehaviour {
 
-	int max = 1000;
-	int min = 1;
-	int guess = 500;
+	int max;
+	int min;
+	int guess;
 
 	// Use this for initialization
 	void Start () {
+		InitiliceVariables ();
 		ShowInitialDebugLog ();
-
-		max += 1; // Prevent that the number 1000 won't be displayed
 	}
 
 	void ShowInitialDebugLog () {
+		Debug.Log ("========================");
 		Debug.Log ("Welcome to Number Wizard");
 		Debug.Log ("Pick a number in your head, but don't tell me!");
 
@@ -23,6 +23,14 @@ public class NumberW : MonoBehaviour {
 
 		Debug.Log ("Is the number higher or lower than " + guess + "?");
 		Debug.Log ("Up = higher, down = lower, return = equal");
+
+		max += 1; // Prevent that the number 1000 won't be displayed
+	}
+
+	void InitiliceVariables () {
+		max = 1000;
+		min = 1;
+		guess = 500;
 	}
 	
 	// Update is called once per frame
@@ -35,6 +43,8 @@ public class NumberW : MonoBehaviour {
 			NextGuess ();
 		} else if (Input.GetKeyDown (KeyCode.Return)) { // Enter key pressed
 			Debug.Log ("Your number is " + guess + "!!");
+			InitiliceVariables ();
+			ShowInitialDebugLog ();
 		}
 	}
 
