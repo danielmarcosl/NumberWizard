@@ -24,22 +24,16 @@ public class NumberW : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.UpArrow)) { // Up arrow key pressed
-			//Debug.Log ("Up arrow pressed");
-
 			min = guess;
 			guess = (max + min) / 2;
 
 			Debug.Log ("Higher or lower than " + guess + "?");
 		} else if (Input.GetKeyDown (KeyCode.DownArrow)) { // Down arrow key pressed
-			//Debug.Log ("Down arrow pressed");
-
 			max = guess;
 			guess = (max + min) / 2;
 
 			Debug.Log ("Higher or lower than " + guess + "?");
 		} else if (Input.GetKeyDown (KeyCode.Return)) { // Enter key pressed
-			//Debug.Log ("Enter pressed");
-
 			Debug.Log ("Your number is " + guess + "!!");
 		}
 	}
