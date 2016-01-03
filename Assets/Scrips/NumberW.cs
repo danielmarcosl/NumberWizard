@@ -17,6 +17,8 @@ public class NumberW : MonoBehaviour {
 
 		Debug.Log ("Is the number higher or lower than " + guess + "?");
 		Debug.Log ("Up = higher, down = lower, return = equal");
+
+		max += 1; // Prevent that the number 1000 won't be displayed
 	}
 	
 	// Update is called once per frame
