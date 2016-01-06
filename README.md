@@ -19,8 +19,8 @@ If the game doesn't display the number in 10 tries, the player win.
 ###Start
 ![alt start](./readme-images/start.jpg)
 ###Game
-![alt start](./readme-images/game.jpg)
+![alt game](./readme-images/game.jpg)
 ###Win
-![alt start](./readme-images/win.jpg)
+![alt win](./readme-images/win.jpg)
 ###Lose
-![alt start](./readme-images/lose.jpg)
+![alt lose](./readme-images/lose.jpg)
