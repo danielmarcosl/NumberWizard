@@ -10,7 +10,6 @@ If the game doesn't display the number in 10 tries, the player win.
 - Unity 5.3.1
 - MonoDevelop 5.9.6
 
-
 ##Algorithms
 
 ![alt graph](./readme-images/graph.png)
